@@ -1,0 +1,61 @@
+POST /api/auth/register HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 4487217f-050c-1723-a8a2-036d9a96b3f9
+
+{
+	"username": "user1",
+	"password": "abc123456"
+}
+
+###
+POST /api/auth/login HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+	"username": "user3",
+	"password": "abc123456"
+}
+
+###
+POST /api/posts/create HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVjMzEzZTM5NDY0OThjNGQ4ODM4NzMiLCJpYXQiOjE2MzM0NDgxMjh9.hACGHzxDco5K1xpXFrktIzpXLIFvb5kFLRymXHIjwm0
+
+{
+	"title": "Boostrap",
+	"description": "FrontEnd CSS Convinent Tool",
+	"url": "https://Boostrap.org/",
+	"status": "TO LEARN"
+}
+
+###
+GET /api/posts/ HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVjMzBlMTM5NDY0OThjNGQ4ODM4NzAiLCJpYXQiOjE2MzM0NDYyODZ9.-bFbwgCBCEyi7njz0MH5GA-Pfwo-QG0uxQh1iREAwiw
+
+{
+
+}
+
+###
+PUT /api/posts/615c58d060c766a3cc52d7ed HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVjMzBlMTM5NDY0OThjNGQ4ODM4NzAiLCJpYXQiOjE2MzM0NDYyODZ9.-bFbwgCBCEyi7njz0MH5GA-Pfwo-QG0uxQh1iREAwiw
+
+{
+    "title": "MongoDB Advanced",
+    "description": "Database Management Tools And Optimization",
+    "url": "https://www.mongodb.org",
+    "status": "LEARNING"
+}
+
+###
+DELETE /api/posts/615c70e8387a061fc8e989ca HTTP/1.1
+Host: localhost:3000
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVjMzEzZTM5NDY0OThjNGQ4ODM4NzMiLCJpYXQiOjE2MzM0NDgyNjF9._ixfBHOQxTeSU6vLUSQOypCDBs3Kc9TpV3qz8xFx5jc

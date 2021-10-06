@@ -17,6 +17,8 @@ module.js:
     exports.function2 = function2
     exports.function3 = function3
 
+    ###
+    export defaul function
 
 src.js
 

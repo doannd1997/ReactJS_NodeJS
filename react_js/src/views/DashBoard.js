@@ -62,19 +62,19 @@ const DashBoard = () => {
 						</Col>
 					))}
 				</Row>
-				{/* <OverlayTrigger
+				<OverlayTrigger
 					placement='left'
 					overlay={<Tooltip>Add a new thing to learn</Tooltip>}
-				> */}
-				<Button
-					className='btn-floating'
-					onClick={() => {
-						setShowAddPostModal(true)
-					}}
 				>
-					<img src={addItem} alt='Add item' width='60' height='60' />
-				</Button>
-				{/* </OverlayTrigger> */}
+					<Button
+						className='btn-floating'
+						onClick={() => {
+							setShowAddPostModal(true)
+						}}
+					>
+						<img src={addItem} alt='Add item' width='60' height='60' />
+					</Button>
+				</OverlayTrigger>
 			</>
 		)
 	}

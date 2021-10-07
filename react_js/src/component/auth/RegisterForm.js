@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import { useState, useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 import AlertMessage from '../layout/Alert'
@@ -65,24 +66,22 @@ const Register = () => {
 				</Form.Group>
 				<Form.Group>
 					<Form.Control
-						type='text'
+						type='password'
 						placeholder='password'
 						name='password'
 						required
 						value={password}
 						onChange={onChangeRegisterForm}
-						type='password'
 					/>
 				</Form.Group>
 				<Form.Group>
 					<Form.Control
-						type='text'
+						type='password'
 						placeholder='confirm password'
 						name='confirmPassword'
 						required
 						value={confirmPassword}
 						onChange={onChangeRegisterForm}
-						type='password'
 					/>
 				</Form.Group>
 				<Form.Group>

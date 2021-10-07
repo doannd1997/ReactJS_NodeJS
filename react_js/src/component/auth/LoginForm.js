@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import { useState, useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 import AlertMessage from '../layout/Alert'
@@ -8,7 +9,7 @@ import AlertMessage from '../layout/Alert'
 const Login = () => {
 	const { loginUser } = useContext(AuthContext)
 
-	const history = useHistory()
+	// const history = useHistory()
 
 	const [alert, setAlert] = useState(null)
 
@@ -57,11 +58,10 @@ const Login = () => {
 				</Form.Group>
 				<Form.Group>
 					<Form.Control
-						type='text'
+						type='password'
 						placeholder='password'
 						name='password'
 						required
-						type='password'
 						value={password}
 						onChange={onChangeLoginForm}
 					/>

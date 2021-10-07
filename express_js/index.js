@@ -40,5 +40,5 @@ app.get('/', (req, res) => {
 
 const port = process.env.SERVER_PORT
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Server app listening at http://localhost:${port}`)
 })

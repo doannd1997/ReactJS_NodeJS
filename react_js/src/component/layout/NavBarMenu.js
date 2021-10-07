@@ -16,8 +16,6 @@ const NavBarMenu = () => {
 		logoutUser,
 	} = useContext(AuthContext)
 
-	const logout = () => {}
-
 	return (
 		<Navbar expand='lg' bg='primary' variant='dark' className='shadow'>
 			<Navbar.Brand className='font-weight-bolder text-white'>
@@ -43,7 +41,10 @@ const NavBarMenu = () => {
 					</Nav.Link>
 				</Nav>
 				<Nav>
-					<Nav.Link className='font-weight-bolder text-white mr-2' disable>
+					<Nav.Link
+						className='font-weight-bolder text-white mr-2'
+						disabled={true}
+					>
 						Welcome {username}
 					</Nav.Link>
 					<Button

@@ -112,9 +112,7 @@ router.post('/login', async (req, res) => {
 // @desc Verify Access Token
 // @access public
 router.get('/', verifyToken, async (req, res) => {
-	console.log(req.userId)
 	const us = await User.find()
-	console.log(us)
 	try {
 		const user = await User.findById(req.userId).select('-password')
 		if (!user) {

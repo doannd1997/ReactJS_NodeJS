@@ -1,7 +1,7 @@
 export const apiUrl =
 	process.env.NODE_ENV !== 'production'
-		? 'http://localhost:5000/api'
-		: 'some-domain/api'
+		? 'http://localhost:3000/api'
+		: 'https://nameless-inlet-97580.herokuapp.com/api'
 
 export const localStorageAccessTokenName = 'MERN-TOKEN-NAME'
 

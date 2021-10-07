@@ -34,7 +34,7 @@ const ActionButton = ({ url, id }) => {
 			<Button className='post-button' target='_blank' onClick={onChoosePost}>
 				<img src={editIcon} alt='edit' width='24' height='24'></img>
 			</Button>
-			<Button className='post-button' target='_blank' onClick={onChoosePost}>
+			<Button className='post-button' target='_blank' onClick={onDeletePost}>
 				<img src={deleteIcon} alt='delete' width='24' height='24'></img>
 			</Button>
 		</>
